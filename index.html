@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Murshida P portfolio showcasing modern web development projects, skills, and contact details."
+  >
+  <title>Murshida P | Interactive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home">Murshida P</a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-toggle" id="darkModeToggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+          <span class="theme-text">Dark Mode</span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">Interactive Portfolio Website</p>
+        <h1>Hello, I'm <span class="gradient-text">Murshida P</span></h1>
+        <p class="hero-role">
+          <span class="role-label">I am a </span>
+          <span id="typingText" class="typing-text" aria-live="polite"></span>
+        </p>
+        <p class="hero-description">
+          I build modern, responsive, and interactive web experiences that combine
+          clean design with functional, scalable development.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View Projects</a>
+          <a class="button button-secondary" href="#contact">Get In Touch</a>
+        </div>
+        <ul class="hero-highlights" aria-label="Quick highlights">
+          <li>BSc Computer Science</li>
+          <li>Responsive UI Focus</li>
+          <li>Scalable Frontend Development</li>
+        </ul>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img
+            class="profile-image"
+            src="images/profile.jpeg"
+            alt="Portrait of Murshida P"
+          >
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="section-tag">About</p>
+        <h2>Designing smooth, engaging web experiences</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>Who I Am</h3>
+          <p>
+            I enjoy creating interfaces that not only look visually polished,
+            but also feel smooth, intuitive, and engaging to use.
+          </p>
+        </article>
+        <article class="about-card">
+          <h3>What I Focus On</h3>
+          <p>
+            My work blends clean frontend design, scalable development
+            practices, and user-friendly interactions that make websites feel
+            alive.
+          </p>
+        </article>
+        <article class="about-card">
+          <h3>Education</h3>
+          <p>BSc Computer Science with a strong interest in modern web technologies.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Skills</p>
+          <h2>Tools and technologies I work with</h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-grid" role="list" aria-label="Skills list">
+            <button class="skill-card" type="button" data-skill="HTML">HTML</button>
+            <button class="skill-card" type="button" data-skill="CSS">CSS</button>
+            <button class="skill-card" type="button" data-skill="JavaScript">JavaScript</button>
+            <button class="skill-card" type="button" data-skill="PHP">PHP</button>
+            <button class="skill-card" type="button" data-skill="React">React</button>
+            <button class="skill-card" type="button" data-skill="Node.js">Node.js</button>
+            <button class="skill-card" type="button" data-skill="Astro">Astro</button>
+            <button class="skill-card" type="button" data-skill="Go">Go</button>
+            <button class="skill-card" type="button" data-skill="Next.js">Next.js</button>
+            <button class="skill-card" type="button" data-skill="Tailwind CSS">Tailwind CSS</button>
+            <button class="skill-card" type="button" data-skill="Supabase">Supabase</button>
+            <button class="skill-card" type="button" data-skill="MongoDB">MongoDB</button>
+          </div>
+
+          <aside class="skill-info-card" aria-live="polite">
+            <h3 id="skillTitle">Click a skill</h3>
+            <p id="skillDescription">
+              Select any skill card to see a short description of how it supports my development work.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="section-tag">Projects</p>
+        <h2>Selected work and practice builds</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-badge">Frontend</div>
+          <h3>Styled Portfolio</h3>
+          <p>
+            A personal portfolio layout focused on modern visuals, clean spacing,
+            and polished responsive styling.
+          </p>
+          <ul class="project-stack" aria-label="Project technologies">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-badge">JavaScript</div>
+          <h3>Interactive Contact Experience</h3>
+          <p>
+            A validation-first contact form featuring real-time feedback, reusable
+            functions, success states, and accessible messaging.
+          </p>
+          <ul class="project-stack" aria-label="Project technologies">
+            <li>JavaScript</li>
+            <li>DOM API</li>
+            <li>Accessibility</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-badge">Full Stack</div>
+          <h3>Modern Web App Concepts</h3>
+          <p>
+            Practice projects exploring React, Next.js, Supabase, and Node.js to
+            build scalable web experiences and connected interfaces.
+          </p>
+          <ul class="project-stack" aria-label="Project technologies">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Supabase</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <div class="section-heading section-heading-left">
+            <p class="section-tag">Contact</p>
+            <h2>Let's build something thoughtful together</h2>
+          </div>
+          <p>
+            I’m open to opportunities where I can contribute to modern web
+            projects and continue growing as a developer.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:murshidaprml@gmail.com">murshidaprml@gmail.com</a></li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/murshida-p-6791aa321" target="_blank" rel="noreferrer">
+                linkedin.com/in/murshida-p-6791aa321
+              </a>
+            </li>
+            <li><strong>Role:</strong> Web Developer</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name">
+            <small class="error-message" id="nameError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email">
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here"
+            ></textarea>
+            <small class="error-message" id="messageError"></small>
+          </div>
+
+          <button class="button button-primary form-submit" type="submit">Send Message</button>
+          <p class="form-status" id="formSuccessMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Murshida P. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#home" class="footer-link">Back to top</a>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Scroll to top">
+    ↑
+  </button>
+</body>
+</html>
